@@ -30,7 +30,7 @@ public class Update extends Network {
     initialize("testdata/mfile".replace("/", File.separator), component("Read Master"), port("SOURCE"));
     initialize("testdata/dfile".replace("/", File.separator), component("Read Details"), port("SOURCE"));
 
-    initialize("3, 2, 5", component("Collate"), port("CTLFIELDS"));
+    initialize("1, 1, 1", component("Collate"), port("CTLFIELDS"));
 
   }
 
